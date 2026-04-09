@@ -1,0 +1,104 @@
+.wp-block-ai-editor-blocks-ai-gen-block {
+	background-color: #f0f0f0;
+}
+
+// AI Edit Popover Styles
+.aieb-ai-edit-popover {
+	// Override Gutenberg's default Popover constraints.
+	// The default max-width on .components-popover__content is often 320px,
+	// which makes the popup too narrow for our content.
+	min-width: 450px !important;
+	max-width: 550px !important;
+	width: auto !important;
+
+	// Ensure the content wrapper uses our dimensions.
+	// Using !important to override any parent Popover constraints.
+	> .components-popover__content {
+		max-width: 550px !important;
+		min-width: 450px !important;
+		width: auto !important;
+		max-height: 90vh;
+		overflow-x: hidden;
+	}
+
+	.aieb-ai-edit-content {
+		padding: 20px;
+		min-width: 450px;
+		max-width: 550px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.aieb-ai-edit-title {
+		margin: 0 0 16px 0;
+		font-size: 15px;
+		font-weight: 600;
+		color: #1e1e1e;
+	}
+
+	// Responsive styles for smaller screens.
+	@media ( max-width: 600px ) {
+		min-width: 300px !important;
+		max-width: 90vw !important;
+
+		> .components-popover__content {
+			min-width: 300px !important;
+			max-width: 90vw !important;
+		}
+
+		.aieb-ai-edit-content {
+			min-width: 300px;
+			max-width: 90vw;
+			padding: 16px;
+		}
+
+		.aieb-ai-edit-title {
+			font-size: 14px;
+		}
+
+		.components-textarea-control__input {
+			min-height: 80px;
+			font-size: 13px;
+		}
+	}
+
+	.aieb-ai-edit-actions {
+		display: flex;
+		justify-content: flex-end;
+		gap: 10px;
+		margin-top: 16px;
+
+		.components-button {
+			display: flex;
+			align-items: center;
+			gap: 6px;
+			padding: 8px 16px;
+
+			.components-spinner {
+				margin: 0;
+			}
+		}
+	}
+
+	.aieb-ai-edit-hint {
+		margin: 12px 0 0 0;
+		font-size: 12px;
+		color: #757575;
+		font-style: italic;
+	}
+
+	.components-notice {
+		margin: 0 0 16px 0;
+	}
+
+	.components-base-control {
+		margin-bottom: 0;
+	}
+
+	.components-textarea-control__input {
+		min-height: 100px;
+		font-size: 14px;
+		line-height: 1.5;
+		padding: 12px;
+	}
+}

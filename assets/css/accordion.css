@@ -1,0 +1,98 @@
+/**
+ * Accordion Styles for AI Editor Blocks.
+ */
+
+/* Accordion Container */
+.is-ai-accordion {
+	width: 100%;
+}
+
+/* Accordion Item */
+.ai-accordion-item {
+	border: 1px solid #e0e0e0;
+	margin-bottom: -1px;
+}
+
+.ai-accordion-item:first-child {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.ai-accordion-item:last-child {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	margin-bottom: 0;
+}
+
+/* Accordion Header */
+.ai-accordion-header {
+	width: 100%;
+	padding: 16px 20px;
+	background: #f9f9f9;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 500;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: background 0.2s ease;
+}
+
+.ai-accordion-header:hover {
+	background: #f0f0f0;
+}
+
+.ai-accordion-header:focus {
+	outline: 2px solid #0073aa;
+	outline-offset: -2px;
+}
+
+/* Accordion Icon */
+.ai-accordion-icon {
+	font-size: 12px;
+	transition: transform 0.2s ease;
+}
+
+.ai-accordion-item.open .ai-accordion-icon {
+	transform: rotate(180deg);
+}
+
+/* Accordion Content */
+.ai-accordion-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+	background: #fff;
+}
+
+.ai-accordion-content > *:first-child {
+	margin-top: 0;
+}
+
+.ai-accordion-content > *:last-child {
+	margin-bottom: 0;
+}
+
+/* Open state */
+.ai-accordion-item.open .ai-accordion-content {
+	border-top: 1px solid #e0e0e0;
+}
+
+/* Content padding */
+.ai-accordion-content > * {
+	padding: 16px 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.ai-accordion-header {
+		padding: 12px 16px;
+		font-size: 14px;
+	}
+
+	.ai-accordion-content > * {
+		padding: 12px 16px;
+	}
+}

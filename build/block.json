@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ai-editor-blocks/ai-gen-block",
+  "version": "0.1.0",
+  "title": "AI Gen Blocks",
+  "category": "widgets",
+  "icon": "admin-customizer",
+  "description": "Generate content using AI.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "ai-editor-blocks",
+  "editorScript": "file:./index.js"
+}

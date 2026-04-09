@@ -1,0 +1,84 @@
+/**
+ * Tabs Styles for AI Editor Blocks.
+ */
+
+/* Tabs Container */
+.is-ai-tabs {
+	width: 100%;
+}
+
+/* Tab List */
+.ai-tabs-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0;
+	border-bottom: 2px solid #e0e0e0;
+	margin-bottom: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Tab Button */
+.ai-tab-button {
+	padding: 12px 24px;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid transparent;
+	margin-bottom: -2px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	color: #666;
+	transition: all 0.2s ease;
+}
+
+.ai-tab-button:hover {
+	color: #333;
+	background: rgba(0, 0, 0, 0.02);
+}
+
+.ai-tab-button.active {
+	color: #0073aa;
+	border-bottom-color: #0073aa;
+}
+
+.ai-tab-button:focus {
+	outline: 2px solid #0073aa;
+	outline-offset: -2px;
+}
+
+/* Tab Panels Container */
+.ai-tabs-panels {
+	padding: 20px 0;
+}
+
+/* Tab Panel */
+.ai-tab-panel {
+	display: none;
+}
+
+.ai-tab-panel.active {
+	display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.ai-tabs-list {
+		flex-direction: column;
+		border-bottom: none;
+		border-left: 2px solid #e0e0e0;
+	}
+
+	.ai-tab-button {
+		text-align: left;
+		border-bottom: none;
+		border-left: 2px solid transparent;
+		margin-bottom: 0;
+		padding-left: 16px;
+	}
+
+	.ai-tab-button.active {
+		border-bottom-color: transparent;
+		border-left-color: #0073aa;
+	}
+}
