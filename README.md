@@ -1,6 +1,10 @@
-# AI Editor Blocks
+AI Editor Blocks
 
 AI-powered blocks for the WordPress Gutenberg editor. Generate content, create interactive components, and enhance your editing workflow with artificial intelligence.
+
+**Support Development**: If you find this plugin useful, consider [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K81SQ00B)
+
+---
 
 ## Features
 
@@ -179,6 +183,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Built with [WordPress Gutenberg](https://wordpress.org/gutenberg/)
 - Uses the [WordPress Scripts](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/) package for build tooling
 
----
-
-**Support Development**: If you find this plugin useful, consider [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K81SQ00B)
