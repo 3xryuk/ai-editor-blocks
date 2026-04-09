@@ -1,4 +1,4 @@
-![Plugin Banner](assets/banner.png)
+![Plugin Banner](assets/baner.png)
 
 # AI Editor Blocks
 
