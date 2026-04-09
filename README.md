@@ -1,3 +1,7 @@
+![Plugin Banner](assets/banner.png)
+
+**Support Development**: If you find this plugin useful, consider [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K81SQ00B)
+
 # AI Editor Blocks
 
 AI-powered blocks for the WordPress Gutenberg editor. Generate content, create interactive components, and enhance your editing workflow with artificial intelligence.
