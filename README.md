@@ -1,3 +1,5 @@
+![Plugin Banner](assets/banner.png)
+
 # AI Editor Blocks
 
 AI-powered blocks for the WordPress Gutenberg editor. Generate content, create interactive components, and enhance your editing workflow with artificial intelligence.
